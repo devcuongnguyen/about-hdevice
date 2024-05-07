@@ -1,0 +1,467 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang="vi">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+        <meta name="description" content="Nạp tiền dễ dàng, nhiều hình thức thanh toán: Ví Appota, Thẻ cào, Bank, Visa… với nhiều ưu đãi hấp dẫn"/>
+        <meta name="referrer" content="no-referrer" />
+        <meta name="keywords" content="Gamota, Nạp, Nạp tiền, gamota, nap, nap tien, game, game online, lordmobile, lm, rok, riseofkingdom, riseofkingdoms, theappota, appota, appotacard, appotanap, napappota"/>
+        <meta name="og:title" content="Gamota :: Cổng thanh toán game online"/>
+        <meta name="og:description" content="Nạp tiền dễ dàng, nhiều hình thức thanh toán: Ví Appota, Thẻ cào, Bank, Visa… với nhiều ưu đãi hấp dẫn"/>
+        <meta name="og:image" content="/img/share.jpg"/>
+        <!-- Load css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+        <!-- Load javascript lib -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+        <style>
+        	.game-thumb img {
+        		border-radius: 25%;
+        	}
+        	.block-game .game-list .game .game-inner .game-name {
+        		min-height: 55px;
+        	}
+        	.download {
+        		width: 100px;
+        		height: 30px;
+        		background-color: #2f98ea;
+        		margin: auto;
+        		border-radius: 50px;
+        		line-height: 30px;
+        		color: white;
+        		margin-top: 15px;
+        	}
+        	#back-top {
+			  display: inline-block;
+			  background-color: #FF9800;
+			  text-decoration: none;
+			  width: 50px;
+			  height: 50px;
+			  text-align: center;
+			  border-radius: 4px;
+			  position: fixed;
+			  bottom: 30px;
+			  right: 30px;
+			  transition: background-color .3s,
+			    opacity .5s, visibility .5s;
+			  opacity: 0;
+			  visibility: hidden;
+			  z-index: 1000;
+			}
+			#back-top::after {
+			  content: "\f077";
+			  font-family: FontAwesome;
+			  font-weight: normal;
+			  font-style: normal;
+			  font-size: 2em;
+			  line-height: 48px;
+			  color: #fff;
+			}
+			#back-top:hover {
+			  cursor: pointer;
+			  background-color: #333;
+			}
+			#back-top:active {
+			  background-color: #555;
+			}
+			#back-top.show {
+			  opacity: 1;
+			  visibility: visible;
+			}
+
+			/* Styles for the content section */
+
+			.content {
+			  width: 77%;
+			  margin: 50px auto;
+			  font-family: 'Merriweather', serif;
+			  font-size: 17px;
+			  color: #6c767a;
+			  line-height: 1.9;
+			}
+			@media (min-width: 500px) {
+			  .content {
+			    width: 43%;
+			  }
+			  #button {
+			    margin: 30px;
+			  }
+			}
+			.content h1 {
+			  margin-bottom: -10px;
+			  color: #03a9f4;
+			  line-height: 1.5;
+			}
+			.content h3 {
+			  font-style: italic;
+			  color: #96a2a7;
+			}
+
+        </style>
+        <title>List App | Trang chủ</title>
+
+    </head>
+    <body class="bg-gray">
+        <header>
+           <!--  <nav class="navbar navbar-expand-lg">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-logo" onclick="goto_payment(this)" data-href="/">
+                    <img src="/assets/v2/images/Gamota_logo.png" class="img-fluid" alt=""/>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class='navbar-nav'>
+                        <li class='nav-item active'>
+                            <a class="nav-link system-tooltip" href="/">Nạp game</a>
+                        </li>
+                        <li class='nav-item '>
+                            <a class="nav-link system-tooltip" onclick="ga('send','event','NTT','NTT_MENU')" href="/game/payment/napla">Nạp lá</a>
+                        </li>
+                        <li class='nav-item '>
+                            <a class="nav-link system-tooltip" onclick="ga('send','event','NTT','NTT_MENU')" href="/cards/sale">Mua thẻ Appota</a>
+                        </li>
+                        <li class='nav-item '>
+                            <a class="nav-link system-tooltip" onclick="ga('send','event','Giftcode','HELP_MENU')" href="/help">Hướng dẫn</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="user-block">
+                    <a href="/profile" class="icon-user">
+                        <img src="/assets/v2/images/icon-user.png" class="img-fluid" alt=""/>
+                    </a>
+                </div>
+            </nav> -->
+
+        </header>
+        <div class="main-content">
+            <style>
+                .frm-search input {
+                    padding: 0px 15px 0px 15px;
+                }
+            </style>
+
+            <!-- Game list -->
+            <div class="container">
+
+                <!-- new game -->
+                <!-- Game -->
+                <div class="block block-game" >
+                    <h3 class="block-title">
+                        <div class="fl">APP 929</div>
+
+                    </h3>
+                    <div class="game-list" id="app-929">
+
+
+                    </div>
+                </div>
+                <!-- <div class="block block-game" >
+                    <h3 class="block-title">
+                        <div class="fl">APP 22</div>
+
+                    </h3>
+                    <div class="game-list" id="app-22">
+
+
+                    </div>
+                </div> -->
+            </div>
+			<a id="back-top"></a>
+            <script type="text/javascript">
+            	let app_929 = [
+            		// {
+					// 	"name":"ClonApp - Web Scan Cloner",
+					// 	"thumb":"https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/d6/4c/e4/d64ce442-dc95-a3e1-7647-308c735a2f52/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp",
+					// 	"link":"https://apps.apple.com/app/id1567782698",
+					// 	"price":"999.000",
+					// },
+            		// {
+					// 	"name":"Genie - AI Chatbot",
+					// 	"thumb":"https://is5-ssl.mzstatic.com/image/thumb/Purple126/v4/67/12/f9/6712f9d5-e1f8-e401-8ce9-60bc00bae33e/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp",
+					// 	"link":"https://apps.apple.com/app/id1658377526",
+					// 	"price":"999.000",
+					// },
+					{
+						"name":"Annie Baby Monitor: Nanny Cam",
+						"thumb":"https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/4d/84/9a/4d849a9f-4f62-ccfb-dbd6-01eeed574623/AppIcon-0-1x_U007emarketing-5-0-85-220.png/460x0w.webp",
+						"link":"https://apps.apple.com/app/id944269894",
+						"price":"999.000",
+					},
+					// {
+					// 	"name":"Boost Cleaner - Clean Up Smart",
+					// 	"thumb":"https://is5-ssl.mzstatic.com/image/thumb/Purple123/v4/a8/c6/a6/a8c6a60b-2acd-ae3b-8053-fdc47ada0a21/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp",
+					// 	"link":"https://apps.apple.com/app/id1475887456",
+					// 	"price":"999.000",
+					// },
+					// {
+					// 	"name":"Wild Journey - Nature Sounds",
+					// 	"thumb":"https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/11/f8/01/11f801e8-c710-9cfc-e50e-5e200cae0465/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-P3-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp",
+					// 	"link":"https://apps.apple.com/app/id1437268231",
+					// 	"price":"999.000",
+					// },
+					{
+						"name":"Translator+ Traductor",
+						"thumb":"https://is2-ssl.mzstatic.com/image/thumb/Purple122/v4/7b/68/3a/7b683a80-22ef-7c36-f3d1-c345b04ee20c/AppIcon-0-1x_U007emarketing-0-7-0-P3-85-220.png/460x0w.webp",
+						"link":"https://apps.apple.com/app/id1631848378",
+						"price":"999.000",
+					},
+            		{
+						"name":"Calculator + App",
+						"thumb":"https://is3-ssl.mzstatic.com/image/thumb/Purple112/v4/80/69/7e/80697eb5-ad11-0176-ae6a-5fd0ef76357f/AppIcon-1x_U007emarketing-0-7-0-P3-85-220.png/460x0w.webp",
+						"link":"https://apps.apple.com/app/id1597933199",
+						"price":"999.000",
+					},
+					{
+						"name":"Authenticator App ·",
+						"thumb":"https://is3-ssl.mzstatic.com/image/thumb/Purple122/v4/32/7c/ea/327ceaa2-00f6-1641-8532-33c2ddfc57c3/AppIcon-0-1x_U007emarketing-0-7-0-P3-85-220.png/460x0w.webp",
+						"link":"https://apps.apple.com/app/id1610508128",
+						"price":"999.000",
+					},
+					{
+						"name":"Wifi Analyzer: Network Scanner",
+						"thumb":"https://is4-ssl.mzstatic.com/image/thumb/Purple113/v4/95/6d/67/956d67cf-4e36-9c6f-4119-fa153c14e66b/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp",
+						"link":"https://apps.apple.com/app/id1578710731",
+						"price":"999.000",
+					},
+					{
+						"name":"Authenticator ©",
+						"thumb":"https://is5-ssl.mzstatic.com/image/thumb/Purple122/v4/14/2e/60/142e60bd-f02d-db9d-e106-99c0907029ac/AppIcon-0-0-1x_U007emarketing-0-0-0-8-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp",
+						"link":"https://apps.apple.com/app/id6444074570",
+						"price":"999.000",
+					},
+					{
+						"name":"Authenticator App - Fast 2FA",
+						"thumb":"https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/9d/3f/71/9d3f71e5-80b6-e614-4acb-3383969a3750/AppIcon-1x_U007emarketing-0-10-0-85-220.png/460x0w.webp",
+						"link":"https://apps.apple.com/app/id1642517432",
+						"price":"999.000",
+					},
+					{
+						"name":"Authenticator ®",
+						"thumb":"https://is4-ssl.mzstatic.com/image/thumb/Purple122/v4/d9/3a/5d/d93a5d9f-dae9-b68f-38ea-6e026e973f6a/AppIcon-1x_U007emarketing-0-7-0-85-220.png/460x0w.webp",
+						"link":"https://apps.apple.com/app/id1602061522",
+						"price":"999.000",
+					},
+					{
+						"name":"CleanUp Storage: Phone Cleaner",
+						"thumb":"https://is4-ssl.mzstatic.com/image/thumb/Purple122/v4/3d/b4/6b/3db46b50-c9bb-1831-f35e-4fad09918456/AppIcon-0-1x_U007emarketing-0-10-0-85-220.png/460x0w.webp",
+						"link":"https://apps.apple.com/app/id6444210913",
+						"price":"999.000",
+					},
+					{
+						"name":"Nature Sounds - Calm & Relax",
+						"thumb":"https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/14/30/29/143029d9-62eb-005b-3984-693a93c687ea/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp",
+						"link":"https://apps.apple.com/app/id6443992485",
+						"price":"999.000",
+					},
+					{
+						"name":"Plant Identifier - Gardening",
+						"thumb":"https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/94/f3/ae/94f3aee1-5135-1f5f-75a0-01ca2c007f29/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp",
+						"link":"https://apps.apple.com/app/id1659322600",
+						"price":"999.000",
+					},
+					{
+						"name":"Wallpapers - Battery Saver",
+						"thumb":"https://is2-ssl.mzstatic.com/image/thumb/Purple126/v4/99/1d/58/991d5857-b236-64b0-7f6b-4c20ad779827/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp",
+						"link":"https://apps.apple.com/app/id1664022710",
+						"price":"999.000",
+					},
+					{
+						"name":"Voilà AI Artist -Trình sửa ảnh",
+						"thumb":"https://is3-ssl.mzstatic.com/image/thumb/Purple116/v4/b4/c2/b6/b4c2b6a1-e3d4-05e8-2e26-80ebacfaa113/AppIcon-1x_U007emarketing-0-7-0-85-220.png/460x0w.webp",
+						"link":"https://apps.apple.com/app/id1558421405",
+						"price":"999.000",
+					},
+					{
+						"name":"Strobe Light: Disco FlashBeats",
+						"thumb":"https://is5-ssl.mzstatic.com/image/thumb/Purple123/v4/3f/60/c8/3f60c800-201c-1c13-f9c9-0e30258b7033/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp",
+						"link":"https://apps.apple.com/app/id1457903998",
+						"price":"1.009.000",
+					},
+					{
+						"name":"Hidden Camera Finder",
+						"thumb":"https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/a3/71/94/a3719428-115c-5fd4-5fbc-61228dbc99b8/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp",
+						"link":"https://apps.apple.com/app/id1571925628",
+						"price":"1.029.000",
+					},
+					{
+						"name":"Asmr Videos For Mind Relaxing",
+						"thumb":"https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/c6/7e/72/c67e7293-2e3f-5151-9da7-b26726545c33/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp",
+						"link":"https://apps.apple.com/app/id6443875431",
+						"price":"1.049.000",
+					},
+
+					// {
+					// 	"name":"Password Manager-Private lock",
+					// 	"thumb":"https://is5-ssl.mzstatic.com/image/thumb/Purple126/v4/11/83/cd/1183cda9-9017-6fcd-aff8-1511129d9684/AppIcon-0-1x_U007emarketing-0-7-0-85-220.png/460x0w.webp",
+					// 	"link":"https://apps.apple.com/app/id1549220681",
+					// 	"price":"929.000",
+					// },{
+					// 	"name":"TaoZen - Relax & Sleep Sounds",
+					// 	"thumb":"https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/e5/6c/0f/e56c0f44-b858-6665-40b2-98291dc10b35/AppIcon-1x_U007emarketing-0-7-0-85-220.png/460x0w.webp",
+					// 	"link":"https://apps.apple.com/app/id1470585608",
+					// 	"price":"929.000",
+					// },
+					// {
+					// 	"name":"Photo Lock - Gallery Vault",
+					// 	"thumb":"https://is5-ssl.mzstatic.com/image/thumb/Purple116/v4/af/ad/ad/afadade5-4347-4377-ec5d-8ee58801a08f/AppIcon-0-1x_U007emarketing-0-7-0-85-220.png/460x0w.webp",
+					// 	"link":"https://apps.apple.com/app/id1503490162",
+					// 	"price":"929.000",
+					// },
+					// {
+					// 	"name":"Best SecureField VPN",
+					// 	"thumb":"https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/f4/87/40/f48740ed-38f0-7f38-e2c3-f34b2fe0f54c/AppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp",
+					// 	"link":"https://apps.apple.com/app/id1328783123",
+					// 	"price":"929.000",
+					// },
+					// {
+					// 	"name":"Quick Scanner Pro PDF Document",
+					// 	"thumb":"https://is3-ssl.mzstatic.com/image/thumb/Purple124/v4/12/8d/e4/128de401-bfd0-d692-3218-eb32f0bbafab/AppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp",
+					// 	"link":"https://apps.apple.com/app/id1526787143",
+					// 	"price":"929.000",
+					// },
+					// {
+					// 	"name":"VPN - Master Proxy for iPhone",
+					// 	"thumb":"https://is1-ssl.mzstatic.com/image/thumb/Purple112/v4/af/c6/a4/afc6a48c-c100-ab73-63a8-751eee3ed492/AppIcon-1x_U007emarketing-0-10-0-sRGB-85-220.png/460x0w.webp",
+					// 	"link":"https://apps.apple.com/app/id1259128859",
+					// 	"price":"929.000",
+					// },
+					// {
+					// 	"name":"MellowMe:Meditation & Breathe",
+					// 	"thumb":"https://is3-ssl.mzstatic.com/image/thumb/Purple123/v4/11/20/2a/11202a05-960e-d695-6f93-fedd20e9b736/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-85-220.png/460x0w.webp",
+					// 	"link":"https://apps.apple.com/app/id1370264566",
+					// 	"price":"929.000",
+					// },
+					// {
+					// 	"name":"Weather Radar Live Storm Alert",
+					// 	"thumb":"https://is2-ssl.mzstatic.com/image/thumb/Purple116/v4/8f/07/c7/8f07c7e5-ecf8-cf32-a7b2-e41c21597f20/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp",
+					// 	"link":"https://apps.apple.com/app/id1509653906",
+					// 	"price":"929.000",
+					// },
+					// {
+					// 	"name":"VPN One: Super Stable Proxy",
+					// 	"thumb":"https://is2-ssl.mzstatic.com/image/thumb/Purple122/v4/fe/da/3c/feda3c63-cb45-8c07-0a1c-9ee9f41d7e65/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp",
+					// 	"link":"https://apps.apple.com/app/id1385395001",
+					// 	"price":"929.000",
+					// },
+					// {
+					// 	"name":"Camera Photo Translator HD",
+					// 	"thumb":"https://is4-ssl.mzstatic.com/image/thumb/Purple112/v4/3b/b1/f6/3bb1f618-be90-623e-92b1-1d4788dfd27a/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.png",
+					// 	"link":"https://apps.apple.com/app/id1349711067",
+					// 	"price":"929.000",
+					// },
+					// {
+					// 	"name":"VPN - Clean super proxy master",
+					// 	"thumb":"https://is4-ssl.mzstatic.com/image/thumb/Purple122/v4/8f/93/2d/8f932da0-7c6a-1dc6-74e7-a32a6a4a932f/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.png",
+					// 	"link":"https://apps.apple.com/app/id1446749209",
+					// 	"price":"929.000",
+					// },
+					// {
+					// 	"name":"VPN ゜",
+					// 	"thumb":"https://is4-ssl.mzstatic.com/image/thumb/Purple112/v4/a2/e0/5a/a2e05aee-9b9f-6c38-e586-5349c8c76dec/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp",
+					// 	"link":"https://apps.apple.com/app/id1474675452",
+					// 	"price":"929.000",
+					// },
+					// {
+					// 	"name":"VPN Point - Fast & Safe VPN",
+					// 	"thumb":"https://is4-ssl.mzstatic.com/image/thumb/Purple116/v4/db/80/f5/db80f59f-20dc-d07a-6f13-24cefcbf41da/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp",
+					// 	"link":"https://apps.apple.com/app/id1476514140",
+					// 	"price":"929.000",
+					// },
+					// {
+					// 	"name":"VPN · ",
+					// 	"thumb":"https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/f5/dd/e2/f5dde283-afd0-2095-6587-37e4027260ed/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp",
+					// 	"link":"https://apps.apple.com/app/id1447640045",
+					// 	"price":"929.000",
+					// },
+					// {
+					// 	"name":"Fonts ◂",
+					// 	"thumb":"https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/81/c4/0b/81c40bfe-e641-4865-fb9b-1a0d52db59be/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp",
+					// 	"link":"https://apps.apple.com/app/id1494279763",
+					// 	"price":"929.000",
+					// },
+
+            	];
+            	let html_929 = '',
+            	 	app_929_selector =  document.getElementById('app-929');
+            	for (const [key, item] of Object.entries(app_929)) {
+				  html_929 +=`<div class="game">
+                            <div class="game-inner" onClick="Hidden(this)" data-href="${item.link}">
+                                <div class="game-badge">
+                                </div>
+                                <div class="game-thumb">
+                                    <a href="javascript:void(0);" >
+                                        <img src="${item.thumb}" class="img-fluid" alt="${item.name}"/>
+                                    </a>
+                                </div>
+                                <h4 class="game-name">
+                                    <a href="javascript:void(0);">${Number(key) + 1}. ${item.name} </a>
+
+                                </h4>
+                                <div class="text-center download">${item.price}<sup>đ</sup></div>
+                            </div>
+                        </div>`
+				}
+
+				app_929_selector.innerHTML = html_929;
+				// Hidden App
+				function goto_page(_item) {
+					var href = $(_item).attr('data-href');
+					window.open(href, '_blank');
+				}
+				function Hidden(object) {
+					goto_page(object)
+					$(object).parent().fadeOut(1000);
+				}
+
+				//Scroll top
+				var btn = $('#back-top');
+
+				$(window).scroll(function() {
+				  if ($(window).scrollTop() > 300) {
+				    btn.addClass('show');
+				  } else {
+				    btn.removeClass('show');
+				  }
+				});
+
+				btn.on('click', function(e) {
+				  e.preventDefault();
+				  $('html, body').animate({scrollTop:0}, '300');
+				});
+
+
+
+
+            </script>
+
+        </div>
+
+        <!-- <div class="bar-bottom ">
+            <div class="container">
+                <nav>
+                    <a href="javascript:void(0)" onclick="go_to_gifcode_site(this)" data-link="https://gamota.com">
+                        <img src="/assets/v2/images/nav-home.svg" alt=""/>
+                    </a>
+                    <a href="/">
+                        <img src="/assets/v2/images/nav-nap-active.svg" alt=""/>
+                    </a>
+                    <a href="javascript:void(0)" onclick="go_to_gifcode_site(this)" data-link="https://gc.gamota.com">
+                        <img src="/assets/v2/images/nav-giftcode.svg" alt=""/>
+                    </a>
+                    <a href="javascript:void(0)" onclick="go_to_support_site(this)" data-link="https://hotro.gamota.com/tickets/chat?type=payment">
+                        <img src="/assets/v2/images/nav-support.svg" alt=""/>
+                    </a>
+                </nav>
+            </div>
+        </div> -->
+
+
+
+
+    </body>
+</html>
