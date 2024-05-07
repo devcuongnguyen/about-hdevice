@@ -17,12 +17,26 @@
 	<!-- Load css -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="style.css" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
 	<!-- Load javascript lib -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.min.js"></script>
 	<style>
+		body {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0;
+			padding: 0;
+			min-height: 100vh;
+			font-family: 'Roboto Condensed';
+			font-size: 22px;
+		}
+
 		.game-thumb img {
 			border-radius: 25%;
 		}
@@ -85,10 +99,15 @@
 			visibility: visible;
 		}
 
+		.about span {
+			display: inline-block;
+			font-size: 15px;
+		}
+
 		/* Styles for the content section */
 
 		.content {
-			width: 77%;
+			width: 100%;
 			margin: 50px auto;
 			font-family: 'Merriweather', serif;
 			font-size: 17px;
@@ -115,6 +134,219 @@
 		.content h3 {
 			font-style: italic;
 			color: #96a2a7;
+		}
+
+		.block-image {
+			text-align: center;
+		}
+
+		.block-image img {
+			width: 100%;
+			border-radius: 20px;
+
+		}
+
+		/* Social icon */
+		html {
+			box-sizing: border-box;
+			overflow-x: hidden;
+		}
+
+		*,
+		*:after,
+		*:before {
+			box-sizing: border-box;
+		}
+
+
+
+		.shareArticle {
+			display: flex;
+			flex-flow: column;
+			align-items: center;
+			width: 100%;
+			padding: 15px;
+		}
+
+		.shareSocial {
+			display: flex;
+			flex-flow: row;
+			align-items: center;
+			margin-bottom: 30px;
+		}
+
+		@media (max-width: 767px) {
+			.shareSocial {
+				flex-flow: column;
+			}
+		}
+
+		.shareSocial .socialTitle {
+			margin: 0 15px 0 0;
+			font-size: 20px;
+		}
+
+		@media (max-width: 767px) {
+			.shareSocial .socialTitle {
+				margin-bottom: 15px;
+				text-align: center;
+			}
+		}
+
+		.shareSocial .socialList {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: flex-start;
+			justify-content: center;
+			flex-flow: row wrap;
+		}
+
+		.shareSocial .socialList li {
+			margin: 5px;
+		}
+
+		.shareSocial .socialList li:first-child {
+			padding-left: 0;
+		}
+
+		.shareSocial .socialList li a {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 50px;
+			height: 50px;
+			border-radius: 100%;
+			text-decoration: none;
+			background-color: #999;
+			color: #fff;
+			transition: 0.35s;
+		}
+
+		.shareSocial .socialList li a i {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform-origin: top left;
+			transform: scale(1) translate(-50%, -50%);
+			transition: 0.35s;
+		}
+
+		.shareSocial .socialList li a:hover i {
+			transform: scale(1.5) translate(-50%, -50%);
+		}
+
+		.shareSocial .socialList li:nth-child(1) a {
+			background-color: #135cb6;
+		}
+
+		.shareSocial .socialList li:nth-child(2) a {
+			background-color: red;
+		}
+
+		.shareSocial .socialList li:nth-child(3) a {
+			background-color: #111111;
+		}
+
+		.shareSocial .socialList li:nth-child(4) a {
+			background-color: green;
+		}
+
+
+		.shareLink .permalink {
+			position: relative;
+			border-radius: 30px;
+		}
+
+		.shareLink .permalink .textLink {
+			text-align: center;
+			padding: 12px 60px 12px 30px;
+			height: 45px;
+			width: 450px;
+			font-size: 16px;
+			letter-spacing: 0.3px;
+			color: #494949;
+			border-radius: 25px;
+			border: 1px solid #f2f2f2;
+			background-color: #f2f2f2;
+			outline: 0;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			transition: all 0.3s ease;
+		}
+
+		@media (max-width: 767px) {
+			.shareLink .permalink .textLink {
+				width: 100%;
+			}
+		}
+
+		.shareLink .permalink .textLink:focus {
+			border-color: #d8d8d8;
+		}
+
+		.shareLink .permalink .textLink::-moz-selection {
+			color: #fff;
+			background-color: #ff0a4b;
+		}
+
+		.shareLink .permalink .textLink::selection {
+			color: #fff;
+			background-color: #ff0a4b;
+		}
+
+		.shareLink .permalink .copyLink {
+			position: absolute;
+			top: 50%;
+			right: 25px;
+			cursor: pointer;
+			transform: translateY(-50%);
+		}
+
+		.shareLink .permalink .copyLink:hover:after {
+			opacity: 1;
+			transform: translateY(0) translateX(-50%);
+		}
+
+		.shareLink .permalink .copyLink:after {
+			content: attr(tooltip);
+			width: 140px;
+			bottom: -40px;
+			left: 50%;
+			padding: 5px;
+			border-radius: 4px;
+			font-size: 0.8rem;
+			opacity: 0;
+			pointer-events: none;
+			position: absolute;
+			background-color: #000000;
+			color: #ffffff;
+			transform: translateY(-10px) translateX(-50%);
+			transition: all 300ms ease;
+			text-align: center;
+		}
+
+		.shareLink .permalink .copyLink i {
+			font-size: 20px;
+			color: #ff0a4b;
+		}
+
+		.block-title {
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 18px;
+			text-align: center;
+			color: #3b3663;
+		}
+
+		/* Shopee  */
+
+		.custom-social img {
+			width: 100%;
+			border-radius: 50%;
 		}
 	</style>
 	<title>List App | Trang chủ</title>
@@ -161,34 +393,55 @@
 			}
 		</style>
 
+
 		<!-- Game list -->
 		<div class="container">
 
 			<!-- new game -->
 			<!-- Game -->
 			<div class="block block-game">
-				<h3 class="block-title">
-					<div class="fl">THEO DÕI CHÚNG TÔI</div>
+				<div class="block-title">
+					<h3>Công Ty Thiết Bị Thẩm Mỹ HDEVICE Hải Dương</h1>
+				</div>
+				<h3 class="block-image">
+					<div class="fl"><img src="/static/media/hdevice.jpg" alt=""></div>
 
 				</h3>
-				<div class="game-list" id="app-929">
-
-
-				</div>
 			</div>
-			<!-- <div class="block block-game" >
-                    <h3 class="block-title">
-                        <div class="fl">APP 22</div>
+			<div class="block shareArticle">
+				<div class="shareSocial">
+					<h3 class="socialTitle">THEO DÕI CHÚNG TÔI:</h3>
+					<ul class="socialList">
+						<li><a href="https://www.facebook.com/ThietBiThamMyHdevice" target="_blank"><i
+									class="fa-brands fa-facebook-f"></i></a></li>
+						<li><a href="https://www.youtube.com/channel/UCT0ElY-t_m7c0j8XeNsq3FA" target="_blank"><i
+									class="fa-brands fa-youtube"></i></a></li>
+						<li><a href="https://www.tiktok.com/@tbspahdevice?_t=8lQwFkgd5dP&_r=1" target="_blank"><i
+									class="fab fa-tiktok"></i></i></a></li>
+						<li class="custom-social"><a href="https://zalo.me/0934893398" target="_blank"><img
+									src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cb/49/3b/cb493bfe-9bb4-e89b-0179-5cb6d2ba79f2/AppIcon-0-0-1x_U007emarketing-0-7-0-0-85-220.png/460x0w.webp"
+									alt=""></a>
+						</li>
+						<li class="custom-social">
+							<a href="https://shopee.vn/thietbispahd" target="_blank"><img
+									src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/47/1b/a3/471ba318-c8ba-1830-791f-d2d08c73e2c6/AppIcon-0-0-1x_U007emarketing-0-5-0-0-85-220.png/460x0w.webp"
+									alt="Shopee"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="about">
 
-                    </h3>
-                    <div class="game-list" id="app-22">
+					<span><i class="fa fa-map-marker" aria-hidden="true"></i> Địa chỉ: 88 Đinh Văn Tả - TP Hải Dương -
+						Hải Dương</span>
+					<span><i class="fa fa-phone" aria-hidden="true"></i> Hotline: 0934.893.398</span>
+				</div>
+
+			</div>
 
 
-                    </div>
-                </div> -->
 		</div>
 		<a id="back-top"></a>
-		<script type="text/javascript">
+		<!-- <script type="text/javascript">
 			let app_929 = [
 
 				{
@@ -341,7 +594,7 @@
 
 
 
-		</script>
+		</script> -->
 
 	</div>
 
